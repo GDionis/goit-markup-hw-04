@@ -521,8 +521,8 @@ body {
 .container-portfolio {
   padding: 20px 24px 20px 24px;
   border-left: 1px solid #eeeeee;
-border-bottom: 1px solid #eeeeee;
-border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .clients {
@@ -541,11 +541,7 @@ border-right: 1px solid #eeeeee;
 }
 
 .clients-item {
-  width: 170px;
-  height: 92px;
   margin-right: 30px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 
 .clients-item:last-child {
@@ -555,6 +551,17 @@ border-right: 1px solid #eeeeee;
 .clients-icon {
   fill: #afb1b8;
   padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  cursor: pointer;
+  fill: var(--accent-dark-txt);
+  border: 1px solid var(--accent-dark-txt);
 }
 
 .team-list-social {
@@ -630,3 +637,4 @@ border-right: 1px solid #eeeeee;
   cursor: pointer;
   background-color: var(--accent-dark-txt);
   fill: var(--primary-light-txt);
+}
